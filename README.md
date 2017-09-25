@@ -12,18 +12,11 @@ docker-compse build
 
 It take several minutes to build the image. Especially, the build step `Optimizing and caching browser bundles...`.
 Also, the first invocation of Kibana can take a while.  
-`
+
 If you want to get started quicker, comment out the build line and uncomment the image line.
 
 ## Run
-Just execute 
-
-```
-docker-compose up
-```
-
-to start the services.
-
+Just execute `docker-compose up` to start the services. To start the containers in the background run `docker-compose up -d`.
 
 The first startup of Kibana can take a while. Don't give up when you see this message: 
 ```
@@ -33,9 +26,7 @@ Optimizing and caching bundles for stagemonitor-kibana, kibana, stateSessionStor
 A few minutes later, you'll see this log message which indicates Kibana is now ready to be accessed.
 
 ```
-
 Optimization of bundles for stagemonitor-kibana, kibana, stateSessionStorageRedirect, timelion and status_page complete in 163.71 seconds
-
 ```
 
 ## Elasticsearch
