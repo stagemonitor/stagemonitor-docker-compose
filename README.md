@@ -57,5 +57,3 @@ Optimization of bundles for stagemonitor-kibana, kibana, stateSessionStorageRedi
 | docker-compose with docker toolbox    | http://192.168.99.100:3000 *|
 
 `*` The IP may vary. Execute `docker-machine ip default` to see the actual IP if the default one doesn't work
-
-Before you cant get started with the dashboards, you'll need to Data Sources > ES stagemonitor and set the Url to http://elasticsearch:9200
