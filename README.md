@@ -4,7 +4,7 @@ This docker-compose file contains Elasticsearch, Grafana and Kibana with the [st
 
 
 ## Build
-First, you have to build the Kibana image in order to install the stagemonitor Kibana plugin:
+First, you have to build the images in order to install the stagemonitor Kibana plugin:
 
 ```
 docker-compse build
