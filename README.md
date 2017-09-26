@@ -1,6 +1,6 @@
 # stagemonitor docker-compose
 
-This docker-compose file contains Elasticsearch, Grafana and Kibana with the [stagemonitor Kibana plugin](https://github.com/stagemonitor/stagemonitor-kibana).
+This docker-compose file consists of Elasticsearch, Grafana and Kibana with the [stagemonitor Kibana plugin](https://github.com/stagemonitor/stagemonitor-kibana).
 
 
 ## Build
