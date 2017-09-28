@@ -2,23 +2,24 @@
 
 This docker-compose file consists of Elasticsearch, Grafana and Kibana with the [stagemonitor Kibana plugin](https://github.com/stagemonitor/stagemonitor-kibana).
 
-
-## Build
-First, you have to build the images in order to install the stagemonitor Kibana plugin:
-
-```
-docker-compse build
-```
-
-It take several minutes to build the image. Especially, the build step `Optimizing and caching browser bundles...`.
-Also, the first invocation of Kibana can take a while.  
-
-If you want to get started quicker, comment out the build line and uncomment the image line.
+## Prerequisites
+Docker and docker-compose
 
 ## Run
-Just execute `docker-compose up` to start the services. To start the containers in the background run `docker-compose up -d`.
 
-The first startup of Kibana can take a while. Don't give up when you see this message: 
+```
+git clone https://github.com/stagemonitor/stagemonitor-docker-compose.git
+cd stagemonitor-docker-compose
+docker-compose up
+```
+
+To start the containers in the background run `docker-compose up -d`.
+
+It can take several minutes to build the image. Especially, the build step `Optimizing and caching browser bundles...`.
+If you want to get started quicker, comment out the build line and uncomment the image line.
+
+
+Also, the first startup of Kibana can take a while. Don't give up when you see this message: 
 ```
 Optimizing and caching bundles for stagemonitor-kibana, kibana, stateSessionStorageRedirect, timelion and status_page. This may take a few minutes
 ```
