@@ -10,6 +10,7 @@ Docker and docker-compose
 ```
 git clone https://github.com/stagemonitor/stagemonitor-docker-compose.git
 cd stagemonitor-docker-compose
+docker-compose build
 docker-compose up
 ```
 
