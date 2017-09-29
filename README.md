@@ -34,7 +34,6 @@ Optimization of bundles for stagemonitor-kibana, kibana, stateSessionStorageRedi
 
 | Type of Elasticsearch installation    | Elasticsearch URL         |
 |---------------------------------------|---------------------------|
-| local installation of elasticsearch   | [http://localhost:9200](http://localhost:9200) |
 | docker-compose on local linux machine or docker for mac/windows | [http://localhost:9200](http://localhost:9200) |
 | docker-compose with docker toolbox    | http://192.168.99.100:9200 *|
 
@@ -43,7 +42,6 @@ Optimization of bundles for stagemonitor-kibana, kibana, stateSessionStorageRedi
 ## Kibana
 | Type of Kibana installation           | Kibana URL                |
 |---------------------------------------|---------------------------|
-| local installation of Kibana          | [http://localhost:5601](http://localhost:5601) |
 | docker-compose on local linux machine or docker for mac/windows | [http://localhost:5601](http://localhost:5601) |
 | docker-compose with docker toolbox    | http://192.168.99.100:5601 *|
 
@@ -52,8 +50,7 @@ Optimization of bundles for stagemonitor-kibana, kibana, stateSessionStorageRedi
 
 ## Grafana
 | Type of Grafana installation          | Grafana URL                |
-|---------------------------------------|---------------------------|
-| local installation of Kibana          | [http://localhost:3000](http://localhost:3000) |
+|---------------------------------------|----------------------------|
 | docker-compose on local linux machine or docker for mac/windows | [http://localhost:3000](http://localhost:3000) |
 | docker-compose with docker toolbox    | http://192.168.99.100:3000 *|
 
