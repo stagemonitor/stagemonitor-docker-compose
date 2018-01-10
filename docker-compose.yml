@@ -1,7 +1,7 @@
 version: '2'
 services:
   elasticsearch:
-    image: docker.elastic.co/elasticsearch/elasticsearch:5.6.0
+    image: docker.elastic.co/elasticsearch/elasticsearch:6.1.1
     environment:
       - cluster.name=monitoring-cluster
       - bootstrap.memory_lock=true
@@ -39,7 +39,7 @@ services:
         max-size: "10m"
         max-file: "20"
   kibana:
-    # image: docker.elastic.co/kibana/kibana:5.6.0
+    # image: docker.elastic.co/kibana/kibana:6.1.1
     # Activates the stagemonitor kibana plugin.
     # It take several minutes to build the image. Also, the first invocation of Kibana can take a while
     # If you don't want this, comment out the build line and uncomment the image line
@@ -52,7 +52,6 @@ services:
       - esnet
     environment:
      - XPACK_GRAPH_ENABLED=false
-     - XPACK_MONITORING_ENABLED=false
      - XPACK_ML_ENABLED=false
      - XPACK_REPORTING_ENABLED=false
      - XPACK_SECURITY_ENABLED=false
