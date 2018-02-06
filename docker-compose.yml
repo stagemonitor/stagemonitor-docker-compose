@@ -2,7 +2,6 @@ version: '2'
 services:
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:5.6.0
-    restart: always
     environment:
       - cluster.name=monitoring-cluster
       - bootstrap.memory_lock=true
@@ -32,6 +31,7 @@ services:
       - esdata:/usr/share/elasticsearch/data
     ports:
       - 9200:9200
+    restart: always
     networks:
       - esnet
     logging:
@@ -48,6 +48,7 @@ services:
     restart: always
     ports:
      - "5601:5601"
+    restart: always
     depends_on:
      - elasticsearch
     networks:
@@ -69,6 +70,7 @@ services:
     build: grafana/
     ports:
       - "3000:3000"
+    restart: always
     depends_on:
      - elasticsearch
     networks:
